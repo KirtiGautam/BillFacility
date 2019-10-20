@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="par" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="800.0" styleClass="parent" stylesheets="@log.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bill.Controller">
+   <children>
+      <VBox fx:id="box" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="sidebar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="135.0" fitWidth="278.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/sm1.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="-30.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="address" prefHeight="78.0" prefWidth="368.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Ebrima" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Group styleClass="admin">
+               <children>
+                  <Label fx:id="GST" layoutX="1.0" layoutY="1.0" prefHeight="39.0" prefWidth="239.0" text="GST    :      " textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="PAN" layoutY="39.0" prefHeight="18.0" prefWidth="230.0" text="PAN    :                 " textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Phone" layoutY="69.0" prefHeight="18.0" prefWidth="223.0" text="Phone :              " textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="E_mail" layoutX="-6.0" layoutY="93.0" prefHeight="33.0" prefWidth="333.0" text=" E-mail : " textFill="WHITE">
+                     <font>
+                        <Font name="Ebrima Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Group>
+         </children>
+      </VBox>
+      <Pane fx:id="pan" layoutX="400.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="username" focusColor="#6747cd" labelFloat="true" layoutX="50.0" layoutY="252.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#login" prefHeight="30.0" prefWidth="300.0" promptText="Username" unFocusColor="#6747cd" />
+            <JFXPasswordField fx:id="password" focusColor="#6747cd" labelFloat="true" layoutX="50.0" layoutY="312.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="300.0" promptText="Password" unFocusColor="#6747cd" />
+            <ImageView fitHeight="97.0" fitWidth="209.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="god">
+               <image>
+                  <Image url="@Images/images.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="99.0" layoutY="196.0" prefHeight="28.0" prefWidth="173.0" text="Sign in to continue" textAlignment="JUSTIFY" textFill="#a3a3a3" wrapText="true">
+               <font>
+                  <Font name="Ebrima Bold" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="50.0" layoutY="379.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#login" prefHeight="50.0" prefWidth="300.0" ripplerFill="#0777ff" styleClass="loginbtn" text="LOGIN" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
