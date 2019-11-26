@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="parent" stylesheets="@log.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bill.view">
+   <children>
+      <JFXTreeTableView fx:id="tb" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="800.0" styleClass="tree-table-cell">
+         <columns>
+            <TreeTableColumn fx:id="name" prefWidth="75.0" text="Name" />
+            <TreeTableColumn fx:id="date" prefWidth="75.0" text="Date" />
+            <TreeTableColumn fx:id="Invoice" prefWidth="75.0" text="Invoice" />
+            <TreeTableColumn fx:id="gr" prefWidth="75.0" text="GR" />
+            <TreeTableColumn fx:id="nop" prefWidth="75.0" text="Packages" />
+            <TreeTableColumn fx:id="weight" prefWidth="75.0" text="Weight" />
+            <TreeTableColumn fx:id="amt" prefWidth="75.0" text="Amount" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXTextArea fx:id="consignor" editable="false" labelFloat="true" layoutX="14.0" layoutY="79.0" prefHeight="86.0" prefWidth="210.0" promptText="To">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></JFXTextArea>
+      <JFXTextField fx:id="billNo" editable="false" layoutX="333.0" layoutY="24.0" unFocusColor="#4059a9">
+         <font>
+            <Font name="Ebrima Bold" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="dat" editable="false" layoutX="594.0" layoutY="140.0" text="Date:">
+         <font>
+            <Font name="Impact" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="34.0" layoutY="29.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#back" styleClass="loginbtn" text=" 🠈 " />
+      <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="85.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#print_b" styleClass="loginbtn" text="  ">
+         <graphic>
+            <ImageView onMouseClicked="#print_b">
+               <image>
+                  <Image url="@printer-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXTextField fx:id="Total" editable="false" layoutX="699.0" layoutY="573.0" prefHeight="26.0" prefWidth="100.0" text="Total: ">
+         <font>
+            <Font name="Ebrima" size="12.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

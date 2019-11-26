@@ -21,8 +21,15 @@ Billing Project for transporters
 
 ### Java, JFoenix.
 
+## INSTALLATION Steps...
+-If you are looking to only use the project you can:
+-1. Navigate to out/artifacts/Bill_facility_jar folder.
+-2. Copy the whole files into your desired location.
+-3. Download JavaFX 11 from the internet and extract all files under bin/Components folder.
+-4. Download the JRE and extract to bin/jre folder.
+-5. Now you can directly run the .exe file in main folder.
 
-## INSTALLATION STEPS..
+## Runnin in IDE (STEPS)..
 
 - Import this in your Intellij IDE.
 
@@ -33,7 +40,7 @@ Billing Project for transporters
 - You can make executable jar in build option.
 
 #### Admin Credentials
-- Email :- a
+- Username :- a
 - Password :- a
 
 Please star the project if you like it. Thank you!

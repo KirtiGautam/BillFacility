@@ -235,7 +235,7 @@ public class create_bill implements Initializable {
         Iterator<Bill> billIterator=Bill.getInstance().getBills().iterator();
         while (billIterator.hasNext()){
             Bill wr=billIterator.next();
-            statement.execute("INSERT INTO bills (Bill_no, Name, Date, Invoice,Consignee, Miscellaneous GR, NOP, Weight, Amount) "+
+            statement.execute("INSERT INTO bills (Bill_no, Name, Date, Invoice,Consignee, Miscellaneous, GR, NOP, Weight, Amount) "+
                                 "VALUES( '"+wr.getBill_no()+"', '"+wr.getName()+"', '"+wr.getDate()+"', '"+wr.getInvoice()+"', '"
                     +wr.getShipTo()+"', '"+wr.getMisc()+"', '"+wr.getGr()+"', "+wr.getNo_of_packages()+", "+wr.getWeight()+", "+wr.getAmount()+")");
         }

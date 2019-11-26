@@ -2,8 +2,8 @@ module Bill.facility {
     requires javafx.fxml;
     requires javafx.controls;
     requires java.sql;
-    requires org.apache.commons.logging;
-    requires pdfbox;
+    requires commons.logging;
+    requires org.apache.pdfbox;
     requires java.desktop;
     requires com.jfoenix;
     requires itextpdf;

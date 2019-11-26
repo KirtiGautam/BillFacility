@@ -7,12 +7,12 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="itextpdf-5.2.0" level="project" />
-    <orderEntry type="library" exported="" name="fontbox-2.0.15" level="project" />
-    <orderEntry type="library" exported="" name="org-apache-commons-logging" level="project" />
-    <orderEntry type="library" exported="" name="jfoenix-9.0.9" level="project" />
-    <orderEntry type="library" exported="" name="pdfbox-2.0.15" level="project" />
-    <orderEntry type="library" exported="" name="sqlite-jdbc-3.27.2.1" level="project" />
-    <orderEntry type="library" exported="" name="javafx" level="project" />
+    <orderEntry type="library" name="fontbox-2.0.3" level="project" />
+    <orderEntry type="library" name="itextpdf-5.2.0" level="project" />
+    <orderEntry type="library" name="jfoenix-9.0.9" level="project" />
+    <orderEntry type="library" name="commons-logging-1.2" level="project" />
+    <orderEntry type="library" name="pdfbox-2.0.17" level="project" />
+    <orderEntry type="library" name="sqlite-jdbc-3.21.0" level="project" />
+    <orderEntry type="library" name="javafx-swt" level="project" />
   </component>
 </module>

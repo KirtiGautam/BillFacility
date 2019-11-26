@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="use" prefHeight="600.0" prefWidth="800.0" styleClass="parent" stylesheets="@log.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bill.View_cus">
+   <center>
+      <HBox alignment="CENTER" prefHeight="374.0" prefWidth="731.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tb" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="735.0" HBox.hgrow="ALWAYS">
+               <columns>
+                  <TableColumn fx:id="nam" prefWidth="98.4000244140625" text="Name" />
+                  <TableColumn fx:id="gst" prefWidth="89.5999755859375" text="GST" />
+                  <TableColumn fx:id="mob" prefWidth="107.19999694824219" text="Mobile" />
+                  <TableColumn fx:id="mail" prefWidth="112.0" text="E-Mail" />
+                  <TableColumn fx:id="address" prefWidth="135.19998168945312" text="Address" />
+                  <TableColumn fx:id="city" prefWidth="57.5999755859375" text="City" />
+                  <TableColumn fx:id="State" prefWidth="51.99997558593748" resizable="false" text="State" />
+               </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </center>
+   <left>
+      <Pane prefHeight="522.0" prefWidth="65.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="14.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#back" styleClass="loginbtn" text=" 🠈 " />
+            <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="14.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#add_new" onMouseClicked="#add_new" styleClass="loginbtn" text="＋">
+               <font>
+                  <Font name="Imprint MT Shadow" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="14.0" layoutY="89.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#edit" onMouseClicked="#edit" prefHeight="30.0" prefWidth="35.0" styleClass="loginbtn" text="  ">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="14.0" layoutY="131.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#delete" onMouseClicked="#delete" styleClass="loginbtn" text="  ">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </left>
+   <top>
+      <Pane prefHeight="78.0" prefWidth="800.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="220.0" layoutY="22.0" prefHeight="35.0" prefWidth="359.0" style="-fx-background-color: white; -fx-border-color: red;" text="View, Modify or Delete Customers" textAlignment="CENTER" textFill="#a3a3a3" wrapText="true">
+               <font>
+                  <Font name="Impact" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
