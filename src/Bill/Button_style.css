@@ -4,6 +4,7 @@
     -fx-scale-X: 1.1;
 	-fx-border-color:red;
 	-fx-border-radius:5px;
+    -fx-cursor: hand;
 }
 
 .button:pressed {
@@ -14,6 +15,7 @@
     -fx-scale-x: 1.1;
     -fx-scale-y: 1.1;
     -fx-effect: dropshadow(two-pass-box, red, 10, 0.0, 4, 5);
+    -fx-cursor: hand;
 }
 .parent{
  -fx-background-color:aqua

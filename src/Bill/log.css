@@ -21,6 +21,7 @@
     -fx-border-width:2px;
     -fx-border-style:solid;
     -fx-border-radius:5px;
+    -fx-cursor: hand;
 }
 .god{
     -fx-effect: dropshadow(two-pass-box, #6747CD, 10, 0.0, 4, 5);

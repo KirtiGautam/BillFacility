@@ -6,11 +6,11 @@
   <outfile>D:\Workspace\Projects\Bill facility\out\artifacts\Bill_facility_jar\Billing.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
-  <chdir></chdir>
+  <chdir>.</chdir>
   <priority>high</priority>
   <downloadUrl>http://java.com/download</downloadUrl>
   <supportUrl></supportUrl>
-  <stayAlive>true</stayAlive>
+  <stayAlive>false</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
   <icon>D:\Workspace\Projects\Bill facility\out\artifacts\Bill_facility_jar\icon\Bill.ico</icon>
@@ -18,14 +18,17 @@
     <mutexName>Bill</mutexName>
     <windowTitle></windowTitle>
   </singleInstance>
+  <classPath>
+    <mainClass>Bill.Main</mainClass>
+  </classPath>
   <jre>
     <path>bin\jre</path>
-    <bundledJre64Bit>true</bundledJre64Bit>
+    <bundledJre64Bit>false</bundledJre64Bit>
     <bundledJreAsFallback>false</bundledJreAsFallback>
     <minVersion>1.8</minVersion>
-    <maxVersion>11</maxVersion>
+    <maxVersion>1.9</maxVersion>
     <jdkPreference>preferJre</jdkPreference>
     <runtimeBits>64/32</runtimeBits>
-    <opt>--module-path bin\Components\lib  --add-modules javafx.controls,javafx.fxml</opt>
+    <opt>--module-path bin\Components\lib --add-modules javafx.controls,javafx.fxml</opt>
   </jre>
 </launch4jConfig>
